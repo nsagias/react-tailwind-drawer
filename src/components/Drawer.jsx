@@ -27,8 +27,11 @@ export default function Drawer() {
         </button>
       ) : (
         <>
-          <svg onClick={() => setDrawerVisible(!isDrawerVisible)} 
-            className="fixed z-50 flex items-center cursor-pointer right-10 top-6"
+        <button  
+          onClick={() => setDrawerVisible(!isDrawerVisible)} 
+          className="fixed z-50 flex items-center cursor-pointer right-10 top-6"> 
+
+          <svg
             xmlns="http://www.w3.org/2000/svg" 
             viewBox="0 0 24 24" 
             width="40" 
@@ -39,11 +42,12 @@ export default function Drawer() {
             d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" 
             fill="rgba(255,255,255,1)"/>
           </svg>
+          </button>
         </>
       )}
 
       <div
-        className={`top-0 right-0 w-[35vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
+        className={`top-0 right-0 w-80 bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
           isDrawerVisible ? "translate-x-0 " : "translate-x-full"
         }`}
       >
