@@ -27,12 +27,13 @@ export default function Drawer() {
           </button>
       ) : (
         <>
-          <div className="top-0 right-0 fixed bg-blue-400 text-white w-[35vw] h-screen p-10">
-            <button 
+          {/* <div className="top-0 right-0 fixed bg-blue-400 text-white w-[35vw] h-screen p-10"> */}
+            {/* <button 
               onClick={() => setDrawerVisible(!isDrawerVisible)} 
               className="fixed z-30 flex items-center cursor-pointer right-10 top-6"
-            >
-              <svg 
+            > */}
+              <svg onClick={() => setDrawerVisible(!isDrawerVisible)} 
+                className="fixed z-50 flex items-center cursor-pointer right-10 top-6"
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24" 
                 width="40" 
@@ -43,13 +44,23 @@ export default function Drawer() {
                 d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" 
                 fill="rgba(255,255,255,1)"/>
               </svg>
-            </button>
+            {/* </button> */}
      
-            <h2>This is the drawer</h2>
-          </div>
+            {/* <h2>This is the drawer</h2> */}
+          {/* </div> */}
         </>
 
       )}
+
+      <div
+        className={`top-0 right-0 w-[35vw] bg-blue-600  p-10 pl-20 text-white fixed h-full z-40  ease-in-out duration-300 ${
+          isDrawerVisible ? "translate-x-0 " : "translate-x-full"
+        }`}
+      >
+        <h3 className="mt-20 text-4xl font-semibold text-white">
+          this is the drawer
+        </h3>
+      </div>  
      
 
     
