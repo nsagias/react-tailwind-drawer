@@ -24,32 +24,22 @@ export default function Drawer() {
               clip-rule="evenodd">
             </path>
           </svg>
-          </button>
+        </button>
       ) : (
         <>
-          {/* <div className="top-0 right-0 fixed bg-blue-400 text-white w-[35vw] h-screen p-10"> */}
-            {/* <button 
-              onClick={() => setDrawerVisible(!isDrawerVisible)} 
-              className="fixed z-30 flex items-center cursor-pointer right-10 top-6"
-            > */}
-              <svg onClick={() => setDrawerVisible(!isDrawerVisible)} 
-                className="fixed z-50 flex items-center cursor-pointer right-10 top-6"
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
-                width="40" 
-                height="40"
-                >
-              <path fill="none" d="M0 0h24v24H0z"/>
-              <path 
-                d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" 
-                fill="rgba(255,255,255,1)"/>
-              </svg>
-            {/* </button> */}
-     
-            {/* <h2>This is the drawer</h2> */}
-          {/* </div> */}
+          <svg onClick={() => setDrawerVisible(!isDrawerVisible)} 
+            className="fixed z-50 flex items-center cursor-pointer right-10 top-6"
+            xmlns="http://www.w3.org/2000/svg" 
+            viewBox="0 0 24 24" 
+            width="40" 
+            height="40"
+            >
+          <path fill="none" d="M0 0h24v24H0z"/>
+          <path 
+            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z" 
+            fill="rgba(255,255,255,1)"/>
+          </svg>
         </>
-
       )}
 
       <div
