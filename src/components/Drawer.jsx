@@ -47,13 +47,10 @@ export default function Drawer() {
           isDrawerVisible ? "translate-x-0 " : "translate-x-full"
         }`}
       >
-        <h3 className="mt-20 text-4xl font-semibold text-white">
+        <h3 className="mt-20 text-2xl font-semibold text-white">
           this is the drawer
         </h3>
       </div>  
-     
-
-    
     </>
   );
 }
